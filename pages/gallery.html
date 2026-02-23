@@ -3,56 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <title>Галерея</title>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Моя Галерея</h1>
-      <nav>
-        <a href="../index.html">Головна</a> |
-        <a href="contact.html">Контакти</a> |
-        <a href="gallery.html">Галерея</a>
-      </nav>
-      <hr />
-    </header>
+    <div class="container">
+      <header>
+        <h1>Моя Галерея</h1>
+        <nav>
+          <a href="../index.html">Головна</a> |
+          <a href="contact.html">Контакти</a> |
+          <a href="gallery.html">Галерея</a>
+        </nav>
+      </header>
 
-    <main>
-      <section>
-        <h2>Фотографії</h2>
-        <p>Ось декілька фото, це не АІ повірте на слово!:</p>
-        <table border="1" cellpadding="10">
-          <tr>
-            <td align="center">
-              <img
-                src="../photo/bughunting.png"
-                alt="Пошук багів"
-                width="300"
-              /><br />
+      <main>
+        <section id="gallery">
+          <h2>Фотографії</h2>
+          <p>Ось декілька фото, які відображають мої інтереси:</p>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="../photo/bughunting.png" alt="Пошук багів" />
               <em>Процес пошуку багів</em>
-            </td>
-            <td align="center">
+            </div>
+            <div class="gallery-item">
               <img
                 src="../photo/keyboardtyping.png"
                 alt="Написання тест-кейсів"
-                width="300"
-              /><br />
+              />
               <em>Написання документації</em>
-            </td>
-            <td align="center">
-              <img
-                src="../photo/3dmodeling.png"
-                alt="3D Моделювання"
-                width="300"
-              /><br />
+            </div>
+            <div class="gallery-item">
+              <img src="../photo/3dmodeling.png" alt="3D Моделювання" />
               <em>3D Моделювання</em>
-            </td>
-          </tr>
-        </table>
-      </section>
-    </main>
+            </div>
+          </div>
+        </section>
+      </main>
 
-    <footer>
-      <hr />
-      <p>&copy; 2026 Владислав</p>
-    </footer>
+      <footer>
+        <p>&copy; 2026 Владислав</p>
+      </footer>
+    </div>
   </body>
 </html>

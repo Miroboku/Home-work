@@ -3,64 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <title>Контакти</title>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Мої Контакти</h1>
-      <nav>
-        <a href="../index.html">Головна</a> |
-        <a href="contact.html">Контакти</a> |
-        <a href="gallery.html">Галерея</a>
-      </nav>
-      <hr />
-    </header>
+    <div class="container">
+      <header>
+        <h1>Мої Контакти</h1>
+        <nav>
+          <a href="../index.html">Головна</a> |
+          <a href="contact.html">Контакти</a> |
+          <a href="gallery.html">Галерея</a>
+        </nav>
+      </header>
 
-    <main>
-      <section>
-        <h2>Зв'яжіться зі мною</h2>
-        <p>Якщо у вас є пропозиції або питання, ви можете написати мені:</p>
-        <ul>
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:vladyslav@example.com">vladyslav@example.com</a>
-          </li>
-          <li>
-            <strong>Telegram:</strong>
-            <a href="https://t.me/vladyslav_example">@vladyslav_example</a>
-          </li>
-          <li><strong>Телефон:</strong> +380 XX XXX XX XX</li>
-        </ul>
-      </section>
+      <main>
+        <section id="contact-info">
+          <h2>Зв'яжіться зі мною</h2>
+          <p>Якщо у вас є пропозиції або питання, ви можете написати мені:</p>
+          <ul>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:vladyslav@example.com">vladyslav@example.com</a>
+            </li>
+            <li>
+              <strong>Telegram:</strong>
+              <a href="https://t.me/vladyslav_example">@vladyslav_example</a>
+            </li>
+            <li><strong>Телефон:</strong> +380 XX XXX XX XX</li>
+          </ul>
+        </section>
 
-      <section>
-        <h2>Форма зворотнього зв'язку</h2>
-        <form action="#">
-          <label for="name">Ім'я:</label><br />
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Сюди нічого не вписуйте"
-          /><br /><br />
+        <section id="feedback-form">
+          <h2>Форма зворотнього зв'язку</h2>
+          <form action="#" class="contact-form">
+            <div class="form-group">
+              <label for="name">Ім'я:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Сюди нічого не вписуйте, ваше повідомлення нікуди не дійде"
+              />
+            </div>
 
-          <label for="message">Повідомлення:</label><br />
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            cols="50"
-            placeholder="Сюди нічого не вписуйте, ваше повідомлення нікуди не дійде"
-          ></textarea
-          ><br /><br />
+            <div class="form-group">
+              <label for="message">Повідомлення:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="50"
+                placeholder="Сюди нічого не вписуйте, ваше повідомлення нікуди не дійде"
+              ></textarea>
+            </div>
 
-          <input type="submit" value="Надіслати" />
-        </form>
-      </section>
-    </main>
+            <input type="submit" value="Надіслати" />
+          </form>
+        </section>
+      </main>
 
-    <footer>
-      <hr />
-      <p>&copy; 2026 Vladyslav H Corporation</p>
-    </footer>
+      <footer>
+        <p>&copy; 2026 Владислав</p>
+      </footer>
+    </div>
   </body>
 </html>
